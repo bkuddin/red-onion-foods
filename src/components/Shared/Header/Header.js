@@ -1,7 +1,6 @@
 import React from "react";
 import { Container, Nav, Navbar } from "react-bootstrap";
 import logo from "../../../images/logo2.png";
-import { HashLink } from "react-router-hash-link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCartArrowDown } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
@@ -12,7 +11,14 @@ const Header = () => {
 
   return (
     <div>
-      <Navbar bg="light" variant="light" collapseOnSelect expand="lg">
+      <Navbar
+        bg="light"
+        variant="light"
+        collapseOnSelect
+        expand="lg"
+        fixed="top"
+        className="shadow-lg"
+      >
         <Container>
           <Navbar.Brand as={Link} to="/home" className="d-flex ">
             <img
