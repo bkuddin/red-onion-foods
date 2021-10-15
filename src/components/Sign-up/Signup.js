@@ -1,12 +1,12 @@
 import React from "react";
 import { Button } from "react-bootstrap";
 
-const Login = () => {
+const Signup = () => {
   return (
     <div>
-      <Button>Login</Button>
+      <Button>Sign Up</Button>
     </div>
   );
 };
 
-export default Login;
+export default Signup;
